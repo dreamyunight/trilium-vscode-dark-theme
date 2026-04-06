@@ -204,3 +204,75 @@ span.fancytree-node:hover {
 .ck.ck-list__item .ck-button:hover:not(.ck-disabled) {
     background: #04395E;
 }
+
+/* =========================================
+   增强加粗文本的对比度
+   ========================================= */
+.ck-content strong,
+.ck-content b {
+    font-weight: 900 !important;  /* 将粗细拉到最大 */
+    color: #EEE !important;    /* 将加粗字体的颜色提亮为纯白，与正文的 #ccc 拉开差距 */
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3); /* 可选：如果觉得还不够，可以去掉这行注释加一点微光发光效果 */
+}
+
+/* =========================================
+   Typora Night 风格正文标题 (H1-H6)
+   ========================================= */
+
+/* 统一基础设置 */
+.ck-content h1,
+.ck-content h2,
+.ck-content h3,
+.ck-content h4,
+.ck-content h5,
+.ck-content h6 {
+    color: #DEDEDE !important; /* Typora Night 经典的亮白灰文本色 */
+    font-weight: bold !important; /* 统一加粗 */
+    line-height: 1.2 !important;
+    margin-top: 1em !important; /* 顶部留白，增加呼吸感 */
+    margin-bottom: 16px !important; /* 底部留白 */
+    font-family: "Segoe UI", "Helvetica Neue", sans-serif !important; /* 更贴近 Typora 的无衬线字体 */
+}
+
+/* H1: 一级标题 */
+.ck-content h1 {
+    font-size: 2.25em !important;
+    padding-bottom: 0.3em !important;
+    border-bottom: 1px solid #474748 !important; /* 柔和的底部分割线 */
+}
+
+/* H2: 二级标题 */
+.ck-content h2 {
+    font-size: 1.75em !important;
+    padding-bottom: 0.3em !important;
+    border-bottom: 1px solid #474748 !important; /* 柔和的底部分割线 */
+}
+
+/* H3: 三级标题 */
+.ck-content h3 {
+    font-size: 1.5em !important;
+}
+
+/* H4: 四级标题 */
+.ck-content h4 {
+    font-size: 1.25em !important;
+}
+
+/* H5: 五级标题 */
+.ck-content h5 {
+    font-size: 1em !important;
+}
+
+/* H6: 六级标题 */
+.ck-content h6 {
+    font-size: 1em !important;
+    color: #8B8B8B !important; /* 六级标题在 Typora 中通常会变暗 */
+}
+/* 顶部笔记标题 (Typora 风格) */
+input.note-title {
+    color: #DEDEDE !important;
+    font-size: 2.25em !important; 
+    font-weight: bold !important;
+    font-family: "Segoe UI", "Helvetica Neue", sans-serif !important;
+    padding-bottom: 10px !important;
+}

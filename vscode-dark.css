@@ -215,6 +215,11 @@ span.fancytree-node:hover {
     text-shadow: 0 0 1px rgba(255, 255, 255, 0.3); /* 可选：如果觉得还不够，可以去掉这行注释加一点微光发光效果 */
 }
 
+/* 将段落左侧的“六个点”悬浮按钮向左偏移 */
+.ck.ck-block-toolbar-button {
+    transform: translateX(-2px) !important; /* 如果觉得还不够靠左，可以把 -12px 改成 -15px 或 -20px */
+}
+
 /* =========================================
    Typora Night 风格正文标题 (H1-H6)
    ========================================= */
